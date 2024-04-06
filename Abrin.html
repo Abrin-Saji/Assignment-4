@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CE Course/Instructor Evaluation</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <header>
+    <a href="https://www.centennialcollege.ca/" target="_blank">
+      <img src="Centennial-College.png" alt="College Logo">
+    </a>
+  </header>
+
+  <h1>CE Course/Instructor Evaluation</h1>
+
+  <form>
+    <div class="form-group">
+      <label for="CourseName/Code">Course Name/Code:</label>
+      <input type="text" id="CourseName/Code" name="CourseName/Code" required>
+    </div>
+
+    <div class="form-group">
+      <label for="semester">Semester:</label>
+      <select id="semester" name="semester" required>
+        <option value="">Choose your semester</option>
+        <option value="">Fall</option>
+        <option value="">Winter</option>
+        <option value="">Spring/Summer</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Year">Year:</label>
+      <input type="number" id="Year" name="Year" required>
+    </div>
+
+    <div class="form-group">
+      <label for="instructor-name">Instructor Name:</label>
+      <input type="text" id="instructor-name" name="instructor-name" required>
+    </div>
+
+    <!-- INSTRUCTORS RATINGS -->
+
+    <h3>How would you rate your INSTRUCTOR's:</h3>
+
+    <div class="form-group">
+      <label for="Knowledge">1. Knowledge of subject?</label>
+      <select id="Knowledge" name="Knowledge" required>
+        <option value="">Select a rating</option>
+        <option value="4">Excellent</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Not Satisfactory</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="helpfulness">2. Helpfulness?</label>
+      <select id="helpfulness" name="helpfulness" required>
+        <option value="">Select a rating</option>
+        <option value="4">Excellent</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Not Satisfactory</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="CourtesyandRespect">3. Courtesy and Respect for all students?</label>
+      <select id="CourtesyandRespect" name="CourtesyandRespect" required>
+        <option value="">Select a rating</option>
+        <option value="4">Excellent</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Not Satisfactory</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Communication">4. Communication?</label>
+      <select id="Communication" name="Communication" required>
+        <option value="">Select a rating</option>
+        <option value="4">Excellent</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Not Satisfactory</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="overall-Perfoamance">5. Overall Perfoamance:</label>
+      <select id="overall-Perfoamance" name="overall-Perfoamance" required>
+        <option value="">Select a rating</option>
+        <option value="4">Excellent</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Not Satisfactory</option>
+      </select>
+    </div>
+
+
+    <!-- COURSE RATINGS -->
+
+    <h3>COURSE:</h3>
+
+    <div class="form-group">
+      <label for="course-materials">6. How would you rate your course materials?</label>
+      <select id="course-materials" name="course-materials" required>
+        <option value="">Select a rating</option>
+        <option value="4">Excellent</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Not Satisfactory</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="meeting-expectations">7. How much did the course meet your expectations?</label>
+      <select id="meeting-expectations" name="meeting-expectations" required>
+        <option value="">Select a rating</option>
+        <option value="4">Excellent</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Not Satisfactory</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="overall-Rating">8. How much would you rate this course (overall)?</label>
+      <select id="overall-Rating" name="overall-Rating" required>
+        <option value="">Select a rating</option>
+        <option value="4">Excellent</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Not Satisfactory</option>
+      </select>
+    </div>
+
+    <!-- GENERAL INFORMATION -->
+
+    <h3>General information:</h3>
+    <div class="form-group">
+      <label for="course-outline">9. Was the course outline reviewed/explained at the beginning of your course?</label>
+      <select id="course-outline" name="course-outline" required>
+        <option value="">Select an option</option>
+        <option value="">Yes</option>
+        <option value="">No</option>
+        <option value="">Not Sure</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Reccomendation">10. Would you recoommend this course ta a friend with the same intrest?</label>
+      <select id="Reccomendation" name="Reccomendation" required>
+        <option value="">Select an option</option>
+        <option value="">Yes</option>
+        <option value="">No</option>
+        <option value="">Not Sure</option>
+      </select>
+    </div>
+
+    <!-- ANY OTHER COMMENTS -->
+
+    <div class="form-group">
+      <label for="best-thing">11. What is the best thing about this course?</label>
+      <textarea id="best-thing" name="best-thing" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="Improvement">12. How could we improve this course?</label>
+      <textarea id="Improvement" name="Improvement" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="Others">12. Others:</label>
+      <textarea id="Others" name="Others" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website" required>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+
+    <p>
+      <i>Thank you! We will pay attention to your feedback! <br>
+        Web: 
+        <a href="https://www.centennialcollege.ca/site-search?q=continuing%20education"><u>Continuing Education</u>
+        </a>
+        Email: 
+        <a href="advising@centennialcollege.ca"><u>advising@centennialcollege.ca</u>
+        </a>
+      </i>
+    </p>
+
+  </footer>
+
+</body>
+</html>
